@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(135deg, #ffcc80, #ffe0b2);
+    font-family: 'Comic Sans MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 1s ease;
+}
+
+.card img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card img:hover {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+button {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#message {
+    margin-top: 10px;
+    color: #d2691e;
+    font-weight: bold;
+}
